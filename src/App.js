@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Topbar from "./scenes/global/Topbar";
-// import Sidebar from "./scenes/global/Sidebar";
+import SidebarMenu from "./scenes/global/SidebarMenu";
 import Dashboard from "./scenes/dashboard";
 // import Team from "./scenes/team";
 // import Invoices from "./scenes/invoices";
@@ -24,6 +24,7 @@ function App() {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <div className="app">
+          <SidebarMenu></SidebarMenu>
           <main className="content">
             <Topbar />
             <Routes>
